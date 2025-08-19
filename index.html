@@ -364,7 +364,9 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contact-form">
+                    <form id="contact-form" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="subject"
+                          value="from sgarcia-dev.netlify.app" />
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="name" required>

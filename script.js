@@ -68,27 +68,27 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Create mailto link with form data
-        const subject = encodeURIComponent(`Cloud Native Consultation Request from ${data.name}`);
-        const body = encodeURIComponent(
-            `Name: ${data.name}\n` +
-            `Email: ${data.email}\n` +
-            `Company: ${data.company || 'Not provided'}\n` +
-            `Service Interest: ${data.service || 'Not specified'}\n\n` +
-            `Message:\n${data.message}\n\n` +
-            `---\nSent from Cloud Native Consulting website`
-        );
+        // Show loading message
+        showNotification('Sending message...', 'info');
         
-        const mailtoLink = `mailto:samueln.garciar@gmail.com?subject=${subject}&body=${body}`;
-        
-        // Open email client
-        window.location.href = mailtoLink;
-        
-        // Show success message
-        showNotification('Email client opened! Please send the message to complete your inquiry.', 'success');
-        
-        // Reset form
-        contactForm.reset();
+        // Submit form via fetch API
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(response => {
+            if (response.ok) {
+                showNotification('Thank you! Your message has been sent successfully. I will get back to you soon.', 'success');
+                contactForm.reset();
+            } else {
+                throw new Error('Network response was not ok');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showNotification('There was an error sending your message. Please try again or contact me directly at samueln.garciar@gmail.com', 'error');
+        });
     });
     
     // Lazy loading for images
