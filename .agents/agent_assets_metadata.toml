@@ -66,3 +66,9 @@ id = "55kjZf70EctZ3q_bWLB2y"
 uri = "file://attached_assets/generated_images/hero_green_waves.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "rOW2UZ5eeUXWzSO0i6drx"
+uri = "file://attached_assets/generated_images/hero_nodes_network.png"
+type = "image"
+title = "generated_image"
