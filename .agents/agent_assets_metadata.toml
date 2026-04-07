@@ -60,3 +60,9 @@ id = "9KB_Cmn7lbky2-6UyGF7Q"
 uri = "file://attached_assets/generated_images/tech_terraform.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "55kjZf70EctZ3q_bWLB2y"
+uri = "file://attached_assets/generated_images/hero_green_waves.png"
+type = "image"
+title = "generated_image"
