@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -78,7 +79,7 @@
             <div class="section-header">
                 <span class="section-tag">My Story</span>
                 <h2>A Career Built on Transformation</h2>
-                <p>From computer science foundations to leading AI-powered cloud integrations — a 25-year journey across industries and borders.</p>
+                <p>From computer science foundations to leading AI-powered cloud integrations — an over two-decade journey across industries and borders.</p>
             </div>
 
             <div class="timeline">
@@ -334,192 +335,184 @@
             <div class="section-header">
                 <span class="section-tag">Technology Stack</span>
                 <h2>Core Technologies</h2>
-                <p>The essential platforms and tools powering every engagement</p>
+                <p>The essential platforms and tools that power every engagement — from infrastructure foundations to AI-driven systems in production.</p>
             </div>
-            <div class="tech-grid-simple">
+            <div class="tech-cards-grid">
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_kubernetes.png" alt="Kubernetes" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon">
-                            <i class="fas fa-dharmachakra"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Kubernetes</h3>
-                            <p class="tech-desc">The de-facto standard for container orchestration, enabling teams to deploy, manage, and auto-scale containerized workloads across any cloud infrastructure.</p>
-                            <ul class="tech-usecases">
-                                <li>Running AI model-serving containers with horizontal auto-scaling</li>
-                                <li>Multi-tenant workload isolation for enterprise environments</li>
-                                <li>Blue-green and canary deployments for zero-downtime releases</li>
-                            </ul>
-                            <div class="tech-tags"><span>K8s</span><span>Helm</span><span>Operators</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> AI agents deployed as containerized microservices use Kubernetes to auto-scale horizontally when inference load spikes — maintaining sub-second response times without any manual intervention.</span>
-                            </div>
-                        </div>
+                <!-- Kubernetes -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #326ce5, #1a3a7c);">
+                        <i class="devicon-kubernetes-plain" style="font-size:2.2rem; color:#fff;"></i>
                     </div>
+                    <h3>Kubernetes</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> The de-facto standard for container orchestration. Kubernetes enables teams to deploy, manage, and auto-scale containerized workloads across any cloud infrastructure with full resilience and operational consistency.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Running AI model-serving containers with horizontal auto-scaling</li>
+                            <li>Multi-tenant workload isolation for enterprise environments</li>
+                            <li>Blue-green and canary deployments for zero-downtime releases</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> AI agents deployed as containerized microservices use Kubernetes to auto-scale horizontally when inference load spikes — maintaining sub-second response times without any manual intervention.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>K8s</span><span>Helm</span><span>Operators</span><span>HPA</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_ai.png" alt="Artificial Intelligence" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Artificial Intelligence</h3>
-                            <p class="tech-desc">End-to-end AI strategy from design to production — large language models, agentic systems, RAG pipelines, and MLOps practices on Vertex AI and AWS Bedrock.</p>
-                            <ul class="tech-usecases">
-                                <li>Intelligent process automation with LLM-powered agents</li>
-                                <li>Enterprise knowledge retrieval via RAG pipelines</li>
-                                <li>Predictive analytics with continuous model monitoring</li>
-                            </ul>
-                            <div class="tech-tags"><span>LLMs</span><span>Vertex AI</span><span>Bedrock</span><span>MLOps</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> An AI agent integrated with a retail platform autonomously analyzes inventory data, predicts stockouts, and triggers replenishment orders — all without human intervention.</span>
-                            </div>
-                        </div>
+                <!-- Artificial Intelligence -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                        <i class="fas fa-brain" style="font-size:2.2rem; color:#fff;"></i>
                     </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> End-to-end AI strategy and implementation — from large language models and RAG pipelines to fully autonomous agentic systems and MLOps practices running on Vertex AI and AWS Bedrock.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Intelligent process automation with LLM-powered agents</li>
+                            <li>Enterprise knowledge retrieval via RAG pipelines</li>
+                            <li>Predictive analytics with continuous model monitoring</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> An AI agent integrated with a retail platform autonomously analyzes inventory data, predicts stockouts, and triggers replenishment orders — entirely without human intervention.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>LLMs</span><span>Vertex AI</span><span>Bedrock</span><span>MLOps</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_gcp.png" alt="Google Cloud Platform" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #1a73e8, #0d47a1);">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Google Cloud Platform</h3>
-                            <p class="tech-desc">Google Cloud's integrated suite provides the infrastructure, AI tooling, and data platforms needed for modern cloud-native and AI-driven architectures at enterprise scale.</p>
-                            <ul class="tech-usecases">
-                                <li>Vertex AI Pipelines for model training and deployment</li>
-                                <li>Scalable analytical data warehousing with BigQuery</li>
-                                <li>API management and governance with Apigee</li>
-                            </ul>
-                            <div class="tech-tags"><span>GKE</span><span>Cloud Run</span><span>BigQuery</span><span>Apigee</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> A banking AI agent on GCP uses Vertex AI Search to query customer transaction history in real time, delivering personalized financial advice through a secure Cloud Run endpoint.</span>
-                            </div>
-                        </div>
+                <!-- Google Cloud Platform -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #4285F4, #34A853);">
+                        <i class="devicon-googlecloud-plain" style="font-size:2.2rem; color:#fff;"></i>
                     </div>
+                    <h3>Google Cloud Platform</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> Google Cloud's integrated suite of services provides the infrastructure, AI tooling, and data platforms needed for modern cloud-native and AI-driven architectures — with unmatched support for Vertex AI and BigQuery.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Vertex AI Pipelines for model training and deployment</li>
+                            <li>Scalable analytical data warehousing with BigQuery</li>
+                            <li>API management and governance with Apigee</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> A banking AI agent on GCP uses Vertex AI Search to query customer transaction history in real time, delivering personalized financial advice through a secure, serverless Cloud Run endpoint.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>GKE</span><span>Cloud Run</span><span>BigQuery</span><span>Apigee</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_aws.png" alt="Amazon Web Services" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #ff9900, #e65c00);">
-                            <i class="fab fa-aws"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Amazon Web Services</h3>
-                            <p class="tech-desc">AWS provides the broadest cloud infrastructure with enterprise-grade security, making it the primary choice for DevSecOps pipelines and large-scale AI workloads.</p>
-                            <ul class="tech-usecases">
-                                <li>Agentic AI workflows with Step Functions and Bedrock</li>
-                                <li>Secure, compliant workloads using IAM and GuardDuty</li>
-                                <li>ML training and inference at scale with SageMaker</li>
-                            </ul>
-                            <div class="tech-tags"><span>EKS</span><span>Lambda</span><span>SageMaker</span><span>IAM</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> An AI-powered claims processing agent on AWS uses Bedrock for natural language understanding, Step Functions for orchestration, and S3 for document storage — processing thousands of insurance claims per hour.</span>
-                            </div>
-                        </div>
+                <!-- Amazon Web Services -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #FF9900, #c45e00);">
+                        <i class="fab fa-aws" style="font-size:2.4rem; color:#fff;"></i>
                     </div>
+                    <h3>Amazon Web Services</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> AWS provides the broadest cloud infrastructure with enterprise-grade security controls — the primary choice for DevSecOps pipelines, highly regulated workloads, and large-scale AI deployments.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Agentic AI workflows orchestrated with Step Functions and Bedrock</li>
+                            <li>Secure, compliant workloads governed by IAM and GuardDuty</li>
+                            <li>ML training and inference at scale with SageMaker</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> An AI-powered claims processing agent uses Bedrock for natural language understanding, Step Functions for orchestration, and S3 for document storage — processing thousands of insurance claims per hour with full audit trails.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>EKS</span><span>Lambda</span><span>SageMaker</span><span>Bedrock</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_service_mesh.png" alt="Service Mesh" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Service Mesh</h3>
-                            <p class="tech-desc">Service mesh provides the infrastructure layer for secure, observable, and reliable service-to-service communication in distributed microservice architectures.</p>
-                            <ul class="tech-usecases">
-                                <li>mTLS encryption between AI model-serving endpoints</li>
-                                <li>Traffic shaping and canary releases for AI model versions</li>
-                                <li>Distributed tracing across multi-agent communication chains</li>
-                            </ul>
-                            <div class="tech-tags"><span>Istio</span><span>Linkerd</span><span>mTLS</span><span>Traffic Mgmt</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> In a multi-agent AI system, a service mesh routes traffic between specialized agents (retrieval, reasoning, action) with full mTLS encryption and traces every inter-agent call for complete auditability.</span>
-                            </div>
-                        </div>
+                <!-- Service Mesh -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #00b4d8, #0077b6);">
+                        <i class="fas fa-network-wired" style="font-size:2.1rem; color:#fff;"></i>
                     </div>
+                    <h3>Service Mesh — Istio & Linkerd</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> Service mesh provides the infrastructure layer for secure, observable, and resilient service-to-service communication in distributed microservice architectures — without changing application code.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>mTLS encryption between AI model-serving endpoints</li>
+                            <li>Traffic shaping and canary releases for AI model versions</li>
+                            <li>Distributed tracing across multi-agent communication chains</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> In a multi-agent AI system, a service mesh routes traffic between specialized agents — retrieval, reasoning, and action — with full mTLS encryption and traces every inter-agent call for complete auditability.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>Istio</span><span>Linkerd</span><span>mTLS</span><span>Kiali</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_cilium.png" alt="Cilium" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Cilium</h3>
-                            <p class="tech-desc">Built on eBPF, Cilium delivers kernel-level visibility and enforcement for container networking — providing performance and security that traditional networking solutions cannot match.</p>
-                            <ul class="tech-usecases">
-                                <li>Zero-trust network policy enforcement for AI API endpoints</li>
-                                <li>High-throughput data plane for AI inference traffic</li>
-                                <li>Real-time visibility into workload communication patterns</li>
-                            </ul>
-                            <div class="tech-tags"><span>eBPF</span><span>CNI</span><span>Network Policy</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> When an AI inference service handling sensitive medical imaging requires strict isolation, Cilium enforces zero-trust network policies at the kernel level — preventing any unauthorized lateral movement between pods.</span>
-                            </div>
-                        </div>
+                <!-- Cilium -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #00b894, #00695c);">
+                        <i class="fas fa-shield-halved" style="font-size:2.1rem; color:#fff;"></i>
                     </div>
+                    <h3>Cilium — eBPF Networking</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> Built on eBPF, Cilium delivers kernel-level visibility and enforcement for container networking — providing performance and security that traditional CNI solutions cannot match.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Zero-trust network policy enforcement for AI API endpoints</li>
+                            <li>High-throughput data plane for low-latency AI inference traffic</li>
+                            <li>Real-time visibility into workload communication patterns</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> When an AI inference service handling sensitive medical imaging requires strict network isolation, Cilium enforces zero-trust policies at the kernel level — preventing any unauthorized lateral movement between pods.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>eBPF</span><span>CNI</span><span>Hubble</span><span>Network Policy</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_python.png" alt="Python" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #3776ab, #1e4d78);">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Python</h3>
-                            <p class="tech-desc">The universal language of AI and data engineering — Python powers everything from model training and data pipelines to REST APIs and cloud infrastructure automation scripts.</p>
-                            <ul class="tech-usecases">
-                                <li>Building LangChain/LangGraph AI agent workflows</li>
-                                <li>Data preprocessing and feature engineering for ML</li>
-                                <li>Automating cloud infrastructure and DevOps tasks</li>
-                            </ul>
-                            <div class="tech-tags"><span>FastAPI</span><span>LangChain</span><span>Pandas</span><span>Automation</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> A Python agent built with LangGraph coordinates a multi-step workflow — querying SQL, calling an external API, summarizing results with an LLM, and posting a report to Slack — all in under 5 seconds.</span>
-                            </div>
-                        </div>
+                <!-- Python -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #3776ab, #ffd43b);">
+                        <i class="devicon-python-plain" style="font-size:2.2rem; color:#fff;"></i>
                     </div>
+                    <h3>Python</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> The universal language of AI and data engineering. Python powers everything from model training and data pipelines to REST APIs, cloud infrastructure automation, and agentic orchestration frameworks.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Building LangChain and LangGraph AI agent workflows</li>
+                            <li>Data preprocessing and feature engineering for ML models</li>
+                            <li>Automating cloud infrastructure and DevOps tasks at scale</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> A Python agent built with LangGraph coordinates a multi-step workflow — querying a SQL database, calling an external API, summarizing results with an LLM, and posting a formatted report to Slack — all in under 5 seconds.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>FastAPI</span><span>LangChain</span><span>LangGraph</span><span>Pandas</span></div>
                 </div>
 
-                <div class="tech-pill-card">
-                    <img src="attached_assets/generated_images/tech_terraform.png" alt="Terraform" class="tech-card-img" loading="lazy">
-                    <div class="tech-pill-row">
-                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #7b42bc, #5b2d8e);">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <div class="tech-pill-body">
-                            <h3>Terraform</h3>
-                            <p class="tech-desc">Terraform enables teams to define and provision entire cloud environments as reproducible code — version-controlled, auditable, and consistent across every environment.</p>
-                            <ul class="tech-usecases">
-                                <li>Provisioning AI/ML infrastructure on GCP and AWS</li>
-                                <li>Managing multi-cloud environments with consistent state</li>
-                                <li>Automating security controls and compliance baselines</li>
-                            </ul>
-                            <div class="tech-tags"><span>IaC</span><span>Modules</span><span>Multi-cloud</span><span>GitOps</span></div>
-                            <div class="tech-ai-story">
-                                <i class="fas fa-robot"></i>
-                                <span><strong>AI in action:</strong> An AI governance project uses Terraform to automatically provision isolated VPCs, IAM roles, and model serving endpoints for each AI agent — ensuring every agent operates in a sandboxed, auditable environment from its first deployment.</span>
-                            </div>
-                        </div>
+                <!-- Terraform -->
+                <div class="tech-card">
+                    <div class="tech-logo-circle" style="background: linear-gradient(135deg, #7b42bc, #4a1a8c);">
+                        <i class="devicon-terraform-plain" style="font-size:2.2rem; color:#fff;"></i>
                     </div>
+                    <h3>Terraform</h3>
+                    <p class="pillar-why"><strong>What it is:</strong> Terraform enables teams to define and provision entire cloud environments as code — reproducible, version-controlled, auditable, and consistent across every cloud and environment.</p>
+                    <div class="tech-usecases-block">
+                        <p class="usecases-label"><i class="fas fa-check-circle"></i> Top 3 Use Cases</p>
+                        <ul>
+                            <li>Provisioning AI and ML infrastructure on GCP and AWS</li>
+                            <li>Managing multi-cloud environments with consistent state</li>
+                            <li>Automating security controls and compliance baselines as code</li>
+                        </ul>
+                    </div>
+                    <div class="tech-story">
+                        <i class="fas fa-robot"></i>
+                        <div><strong>AI in Action:</strong> An AI governance project uses Terraform to automatically provision isolated VPCs, IAM roles, and model serving endpoints for each AI agent — ensuring every agent operates in a sandboxed, fully auditable environment from its very first deployment.</div>
+                    </div>
+                    <div class="pillar-platforms"><span>IaC</span><span>Modules</span><span>Multi-cloud</span><span>GitOps</span></div>
                 </div>
 
             </div>
@@ -532,7 +525,7 @@
             <div class="section-header">
                 <span class="section-tag">What I Offer</span>
                 <h2>Professional Services</h2>
-                <p>Comprehensive Cloud Native and AI transformation solutions tailored to your business needs</p>
+                <p>Comprehensive cloud-native and AI transformation solutions — tailored to your business needs and designed for measurable results.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
@@ -540,7 +533,7 @@
                         <i class="fas fa-drafting-compass"></i>
                     </div>
                     <h3>Design & Architecture</h3>
-                    <p>Custom cloud native architecture design with best practices for scalability, security, and performance. Complete system blueprints and migration roadmaps.</p>
+                    <p>Custom cloud-native architecture design following industry best practices for scalability, security, and performance. Complete system blueprints and migration roadmaps.</p>
                     <ul>
                         <li>System architecture design</li>
                         <li>Technology stack selection</li>
@@ -554,7 +547,7 @@
                         <i class="fas fa-tools"></i>
                     </div>
                     <h3>Implementation & Support</h3>
-                    <p>End-to-end implementation of cloud native solutions with ongoing support and maintenance. Ensuring smooth operations and continuous improvement.</p>
+                    <p>End-to-end implementation of cloud-native solutions with ongoing support and maintenance — ensuring smooth operations and continuous improvement.</p>
                     <ul>
                         <li>Platform implementation</li>
                         <li>CI/CD pipeline setup</li>
@@ -568,7 +561,7 @@
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h3>Migration & Modernization</h3>
-                    <p>Progressive migration strategies from legacy systems to modern cloud native platforms. Multi-approach methodologies for minimal business disruption.</p>
+                    <p>Progressive migration strategies from legacy systems to modern cloud-native platforms. Multi-approach methodologies designed for minimal business disruption.</p>
                     <ul>
                         <li>Progressive migration</li>
                         <li>Multi-approach strategies</li>
@@ -582,7 +575,7 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>DevSecOps</h3>
-                    <p>Integrated security practices throughout the development lifecycle. Automated security testing, compliance enforcement, and vulnerability management for cloud native applications.</p>
+                    <p>Security integrated throughout the entire development lifecycle — automated testing, compliance enforcement, and vulnerability management for cloud-native applications.</p>
                     <ul>
                         <li>Security automation</li>
                         <li>Vulnerability scanning</li>
@@ -596,7 +589,7 @@
                         <i class="fas fa-server"></i>
                     </div>
                     <h3>VMware Migration to Cloud</h3>
-                    <p>Comprehensive VMware infrastructure migration to cloud platforms. Seamless transition from on-premises virtualization to modern cloud native environments with minimal downtime.</p>
+                    <p>Comprehensive VMware infrastructure migration to cloud platforms — seamless transition from on-premises virtualization to modern cloud-native environments with minimal downtime.</p>
                     <ul>
                         <li>VMware assessment & planning</li>
                         <li>Cloud platform selection</li>
