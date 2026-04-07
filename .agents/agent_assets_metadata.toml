@@ -6,3 +6,57 @@ id = "0nvw37iUgEfgUAS2UnBlE"
 uri = "file://attached_assets/generated_images/hero_modern_integration_v2.png"
 type = "image"
 title = "generated_image"
+
+[[generated]]
+id = "DBaTY95pDRMcYDiChWVLx"
+uri = "file://attached_assets/generated_images/hero_integration_light.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fTtkh_lJWl-TpK0vj_EAX"
+uri = "file://attached_assets/generated_images/tech_kubernetes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "LCPEmaXM4ITPdTc5ibVSX"
+uri = "file://attached_assets/generated_images/tech_ai.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "62qDjJirEyc8j59KKeOcC"
+uri = "file://attached_assets/generated_images/tech_gcp.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "VEviaBIwXTzcymISxkLzP"
+uri = "file://attached_assets/generated_images/tech_aws.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "r8O_AWjuaUy6tiZi8oeyP"
+uri = "file://attached_assets/generated_images/tech_service_mesh.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "5wm613v3_ypfh9CuapzW2"
+uri = "file://attached_assets/generated_images/tech_cilium.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "m8MCw8vLXeU-Jyq3YnATa"
+uri = "file://attached_assets/generated_images/tech_python.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "9KB_Cmn7lbky2-6UyGF7Q"
+uri = "file://attached_assets/generated_images/tech_terraform.png"
+type = "image"
+title = "generated_image"

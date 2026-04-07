@@ -655,12 +655,11 @@ section { padding: 6rem 0; }
 
 .tech-pill-card {
     display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
+    flex-direction: column;
     background: var(--white);
     border: 1px solid var(--border-gray);
     border-radius: var(--radius-md);
-    padding: 1.75rem 2rem;
+    overflow: hidden;
     transition: var(--transition);
 }
 
@@ -670,15 +669,30 @@ section { padding: 6rem 0; }
     border-color: rgba(0,184,148,0.25);
 }
 
+.tech-card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.tech-pill-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.5rem 1.75rem;
+    flex: 1;
+}
+
 .tech-pill-icon {
-    width: 60px;
-    height: 60px;
+    width: 52px;
+    height: 52px;
     border-radius: var(--radius-md);
     background: linear-gradient(135deg, var(--primary-green), var(--accent-green));
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--white);
     flex-shrink: 0;
 }
@@ -690,15 +704,15 @@ section { padding: 6rem 0; }
 
 .tech-pill-body h3 {
     color: var(--near-black);
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
 }
 
 .tech-pill-body p {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
     line-height: 1.65;
     color: var(--medium-gray);
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.85rem;
 }
 
 .tech-tags {

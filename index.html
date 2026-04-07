@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="attached_assets/generated_images/hero_modern_integration_v2.png" alt="Cloud Integration Architecture" loading="lazy">
+                <img src="attached_assets/generated_images/hero_integration_light.png" alt="Cloud Integration Architecture" loading="lazy">
             </div>
         </div>
     </section>
@@ -190,8 +190,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">AI Consulting</span>
-                <h2>The 5 Pillars of AI Strategy</h2>
-                <p>Designing, implementing, and governing intelligent systems on Vertex AI, AWS Bedrock, and in agnostic cloud environments. These are the five disciplines that define modern AI architecture.</p>
+                <h2>The 6 Pillars of AI Strategy</h2>
+                <p>Designing, implementing, and governing intelligent systems on Vertex AI, AWS Bedrock, and in agnostic cloud environments. These are the six disciplines that define modern AI architecture.</p>
             </div>
 
             <!-- Pillars circles -->
@@ -287,6 +287,24 @@
                     </div>
                 </div>
 
+                <div class="pillar-card">
+                    <div class="pillar-circle">
+                        <i class="fas fa-user-shield"></i>
+                        <span>SecGov</span>
+                    </div>
+                    <h3>Security & AI Governance</h3>
+                    <p class="pillar-why"><strong>Why it matters:</strong> AI systems that operate without security guardrails and governance frameworks introduce legal, ethical, and operational risk. Governance defines who controls AI decisions, how outputs are audited, what data may be used, and how the system complies with regulations such as GDPR, the EU AI Act, and sector-specific mandates in banking and healthcare.</p>
+                    <div class="pillar-pitfall">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                            <strong>Common Pitfall:</strong> Deploying AI without explainability, audit trails, or access controls creates black-box systems that cannot be inspected or regulated. Prompt injection attacks, data leakage through model outputs, biased decision-making, and uncontrolled agent actions are all consequences of treating governance as an afterthought rather than a design requirement.
+                        </div>
+                    </div>
+                    <div class="pillar-platforms">
+                        <span>OWASP AI</span><span>EU AI Act</span><span>Vertex AI Safety</span><span>AWS Guardrails</span>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Cloud Platforms -->
@@ -321,90 +339,114 @@
             <div class="tech-grid-simple">
 
                 <div class="tech-pill-card">
-                    <div class="tech-pill-icon">
-                        <i class="fas fa-dharmachakra"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Kubernetes</h3>
-                        <p>Container orchestration at scale — cluster management, workload scheduling, and zero-downtime deployments across multi-cloud environments.</p>
-                        <div class="tech-tags"><span>K8s</span><span>Helm</span><span>Operators</span></div>
-                    </div>
-                </div>
-
-                <div class="tech-pill-card">
-                    <div class="tech-pill-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Artificial Intelligence</h3>
-                        <p>End-to-end AI strategy and implementation — from LLMs and RAG pipelines to agentic systems and MLOps automation on Vertex AI and AWS Bedrock.</p>
-                        <div class="tech-tags"><span>LLMs</span><span>Vertex AI</span><span>Bedrock</span><span>MLOps</span></div>
+                    <img src="attached_assets/generated_images/tech_kubernetes.png" alt="Kubernetes" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Kubernetes</h3>
+                            <p>Container orchestration at scale — cluster management, workload scheduling, and zero-downtime deployments across multi-cloud environments.</p>
+                            <div class="tech-tags"><span>K8s</span><span>Helm</span><span>Operators</span></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-pill-card">
-                    <div class="tech-pill-icon" style="background: linear-gradient(135deg, #1a73e8, #0d47a1);">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Google Cloud Platform</h3>
-                        <p>Deep GCP expertise across GKE, Cloud Run, Vertex AI, BigQuery, and Apigee — architecting secure, scalable cloud-native solutions.</p>
-                        <div class="tech-tags"><span>GKE</span><span>Cloud Run</span><span>BigQuery</span><span>Apigee</span></div>
-                    </div>
-                </div>
-
-                <div class="tech-pill-card">
-                    <div class="tech-pill-icon" style="background: linear-gradient(135deg, #ff9900, #e65c00);">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Amazon Web Services</h3>
-                        <p>AWS cloud architecture and DevSecOps — EKS, Lambda, Step Functions, SageMaker, and security-hardened pipelines at enterprise scale.</p>
-                        <div class="tech-tags"><span>EKS</span><span>Lambda</span><span>SageMaker</span><span>IAM</span></div>
+                    <img src="attached_assets/generated_images/tech_ai.png" alt="Artificial Intelligence" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Artificial Intelligence</h3>
+                            <p>End-to-end AI strategy and implementation — from LLMs and RAG pipelines to agentic systems and MLOps automation on Vertex AI and AWS Bedrock.</p>
+                            <div class="tech-tags"><span>LLMs</span><span>Vertex AI</span><span>Bedrock</span><span>MLOps</span></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-pill-card">
-                    <div class="tech-pill-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Service Mesh</h3>
-                        <p>Istio and Linkerd implementations for traffic management, mTLS encryption, observability, and fine-grained microservice security policies.</p>
-                        <div class="tech-tags"><span>Istio</span><span>Linkerd</span><span>mTLS</span><span>Traffic Mgmt</span></div>
-                    </div>
-                </div>
-
-                <div class="tech-pill-card">
-                    <div class="tech-pill-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Cilium</h3>
-                        <p>eBPF-powered container networking and security — high-performance load balancing, network policy enforcement, and deep visibility into workload traffic.</p>
-                        <div class="tech-tags"><span>eBPF</span><span>CNI</span><span>Network Policy</span></div>
+                    <img src="attached_assets/generated_images/tech_gcp.png" alt="Google Cloud Platform" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #1a73e8, #0d47a1);">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Google Cloud Platform</h3>
+                            <p>Deep GCP expertise across GKE, Cloud Run, Vertex AI, BigQuery, and Apigee — architecting secure, scalable cloud-native solutions.</p>
+                            <div class="tech-tags"><span>GKE</span><span>Cloud Run</span><span>BigQuery</span><span>Apigee</span></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-pill-card">
-                    <div class="tech-pill-icon" style="background: linear-gradient(135deg, #3776ab, #1e4d78);">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="tech-pill-body">
-                        <h3>Python</h3>
-                        <p>Primary language for AI pipelines, automation scripts, data engineering, infrastructure tooling, and cloud-native backend services.</p>
-                        <div class="tech-tags"><span>FastAPI</span><span>LangChain</span><span>Pandas</span><span>Automation</span></div>
+                    <img src="attached_assets/generated_images/tech_aws.png" alt="Amazon Web Services" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #ff9900, #e65c00);">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Amazon Web Services</h3>
+                            <p>AWS cloud architecture and DevSecOps — EKS, Lambda, Step Functions, SageMaker, and security-hardened pipelines at enterprise scale.</p>
+                            <div class="tech-tags"><span>EKS</span><span>Lambda</span><span>SageMaker</span><span>IAM</span></div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="tech-pill-card">
-                    <div class="tech-pill-icon" style="background: linear-gradient(135deg, #7b42bc, #5b2d8e);">
-                        <i class="fas fa-layer-group"></i>
+                    <img src="attached_assets/generated_images/tech_service_mesh.png" alt="Service Mesh" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Service Mesh</h3>
+                            <p>Istio and Linkerd implementations for traffic management, mTLS encryption, observability, and fine-grained microservice security policies.</p>
+                            <div class="tech-tags"><span>Istio</span><span>Linkerd</span><span>mTLS</span><span>Traffic Mgmt</span></div>
+                        </div>
                     </div>
-                    <div class="tech-pill-body">
-                        <h3>Terraform</h3>
-                        <p>Infrastructure as Code at scale — multi-cloud provisioning, module design, state management, and GitOps-aligned infrastructure pipelines.</p>
-                        <div class="tech-tags"><span>IaC</span><span>Modules</span><span>Multi-cloud</span><span>GitOps</span></div>
+                </div>
+
+                <div class="tech-pill-card">
+                    <img src="attached_assets/generated_images/tech_cilium.png" alt="Cilium" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Cilium</h3>
+                            <p>eBPF-powered container networking and security — high-performance load balancing, network policy enforcement, and deep visibility into workload traffic.</p>
+                            <div class="tech-tags"><span>eBPF</span><span>CNI</span><span>Network Policy</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-pill-card">
+                    <img src="attached_assets/generated_images/tech_python.png" alt="Python" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #3776ab, #1e4d78);">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Python</h3>
+                            <p>Primary language for AI pipelines, automation scripts, data engineering, infrastructure tooling, and cloud-native backend services.</p>
+                            <div class="tech-tags"><span>FastAPI</span><span>LangChain</span><span>Pandas</span><span>Automation</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-pill-card">
+                    <img src="attached_assets/generated_images/tech_terraform.png" alt="Terraform" class="tech-card-img" loading="lazy">
+                    <div class="tech-pill-row">
+                        <div class="tech-pill-icon" style="background: linear-gradient(135deg, #7b42bc, #5b2d8e);">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="tech-pill-body">
+                            <h3>Terraform</h3>
+                            <p>Infrastructure as Code at scale — multi-cloud provisioning, module design, state management, and GitOps-aligned infrastructure pipelines.</p>
+                            <div class="tech-tags"><span>IaC</span><span>Modules</span><span>Multi-cloud</span><span>GitOps</span></div>
+                        </div>
                     </div>
                 </div>
 
