@@ -1,0 +1,8 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "0nvw37iUgEfgUAS2UnBlE"
+uri = "file://attached_assets/generated_images/hero_modern_integration_v2.png"
+type = "image"
+title = "generated_image"
