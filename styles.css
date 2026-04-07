@@ -342,7 +342,7 @@ section { padding: 6rem 0; }
     width: 100%;
     height: auto;
     border-radius: var(--radius-lg);
-    mix-blend-mode: multiply;
+    box-shadow: var(--shadow-lg);
 }
 
 /* ── About / Timeline ───────────────────────────────────────── */
