@@ -38,6 +38,9 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-img-scene">
+            <img src="https://www.pixground.com/wp-content/uploads/2023/06/Windows-11-Abstract-Waves-Light-4K-Wallpaper-1081x608.jpg" alt="Cloud Integration Architecture" loading="lazy">
+        </div>
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-badge">Available for Consulting</div>
@@ -70,9 +73,6 @@
                     <a href="#ai-consulting" class="btn btn-primary">Explore AI Consulting</a>
                     <a href="#contact" class="btn btn-secondary">Start a Conversation</a>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://www.pixground.com/wp-content/uploads/2023/06/Windows-11-Abstract-Waves-Light-4K-Wallpaper-1081x608.jpg" alt="Cloud Integration Architecture" loading="lazy">
             </div>
         </div>
     </section>
@@ -341,176 +341,50 @@
                 <h2>Core Technologies</h2>
                 <p>The essential platforms and tools that power every engagement — from infrastructure foundations to AI-driven systems in production.</p>
             </div>
-            <div class="tmc-grid">
+            <div class="tech-plat-panel">
+                <div class="tech-plat-row">
 
-                <!-- Kubernetes -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #326ce5 0%, #1a3a7c 100%);">
-                        <i class="devicon-kubernetes-plain"></i>
+                    <div class="tech-plat-badge">
+                        <i class="devicon-kubernetes-plain" style="color:#326ce5;"></i>
                         <span>Kubernetes</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">De-facto standard for container orchestration — deploy, manage, and auto-scale workloads across any cloud with full resilience.</p>
-                        <ul class="tmc-cases">
-                            <li>AI model-serving with horizontal auto-scaling</li>
-                            <li>Multi-tenant enterprise workload isolation</li>
-                            <li>Zero-downtime blue-green & canary releases</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>AI agents auto-scale as inference load spikes — zero manual intervention.</span>
-                        </div>
-                        <div class="tmc-tags"><span>Helm</span><span>Operators</span><span>HPA</span></div>
-                    </div>
-                </div>
 
-                <!-- Artificial Intelligence -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
-                        <i class="fas fa-brain"></i>
-                        <span>AI & LLMs</span>
+                    <div class="tech-plat-badge">
+                        <i class="fas fa-brain" style="color:#6366f1;"></i>
+                        <span>AI &amp; LLMs</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">End-to-end AI strategy — from large language models and RAG pipelines to autonomous agentic systems and production MLOps.</p>
-                        <ul class="tmc-cases">
-                            <li>Intelligent process automation with LLM agents</li>
-                            <li>Enterprise knowledge retrieval via RAG</li>
-                            <li>Predictive analytics with model monitoring</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>An AI retail agent predicts stockouts and triggers orders — fully autonomous.</span>
-                        </div>
-                        <div class="tmc-tags"><span>LangGraph</span><span>Vertex AI</span><span>Bedrock</span></div>
-                    </div>
-                </div>
 
-                <!-- Google Cloud Platform -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);">
-                        <i class="devicon-googlecloud-plain"></i>
+                    <div class="tech-plat-badge">
+                        <i class="devicon-googlecloud-plain" style="color:#4285F4;"></i>
                         <span>Google Cloud</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">Google Cloud's integrated suite delivers the infrastructure, AI tooling, and data platforms for cloud-native and AI-driven architectures at scale.</p>
-                        <ul class="tmc-cases">
-                            <li>Vertex AI Pipelines for training & deployment</li>
-                            <li>Scalable data warehousing with BigQuery</li>
-                            <li>API management & governance with Apigee</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>Banking AI agent queries transactions via Vertex AI Search in real time.</span>
-                        </div>
-                        <div class="tmc-tags"><span>GKE</span><span>Cloud Run</span><span>BigQuery</span></div>
-                    </div>
-                </div>
 
-                <!-- Amazon Web Services -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #FF9900 0%, #c45e00 100%);">
-                        <i class="fab fa-aws"></i>
+                    <div class="tech-plat-badge">
+                        <i class="fab fa-aws" style="color:#FF9900;"></i>
                         <span>AWS</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">Broadest cloud infrastructure with enterprise-grade security — the primary choice for DevSecOps pipelines and large-scale AI workloads.</p>
-                        <ul class="tmc-cases">
-                            <li>Agentic AI with Step Functions & Bedrock</li>
-                            <li>Secure workloads via IAM & GuardDuty</li>
-                            <li>ML training & inference with SageMaker</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>AI claims agent processes thousands of insurance files per hour on Bedrock.</span>
-                        </div>
-                        <div class="tmc-tags"><span>EKS</span><span>Lambda</span><span>SageMaker</span></div>
-                    </div>
-                </div>
 
-                <!-- Service Mesh -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);">
-                        <i class="fas fa-network-wired"></i>
+                    <div class="tech-plat-badge">
+                        <i class="fas fa-network-wired" style="color:#0ea5e9;"></i>
                         <span>Service Mesh</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">Secure, observable, and resilient service-to-service communication for distributed microservice architectures — without touching application code.</p>
-                        <ul class="tmc-cases">
-                            <li>mTLS encryption between AI model endpoints</li>
-                            <li>Canary releases for AI model versions</li>
-                            <li>Distributed tracing across agent chains</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>Service mesh routes traffic between specialized agents with full mTLS and tracing.</span>
-                        </div>
-                        <div class="tmc-tags"><span>Istio</span><span>Linkerd</span><span>Kiali</span></div>
-                    </div>
-                </div>
 
-                <!-- Cilium -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #00b894 0%, #007a65 100%);">
-                        <i class="fas fa-shield-halved"></i>
+                    <div class="tech-plat-badge">
+                        <i class="fas fa-shield-halved" style="color:#00b894;"></i>
                         <span>Cilium</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">eBPF-powered kernel-level networking and security — delivering performance and visibility that traditional CNI solutions cannot achieve.</p>
-                        <ul class="tmc-cases">
-                            <li>Zero-trust policy enforcement for AI APIs</li>
-                            <li>High-throughput data plane for inference traffic</li>
-                            <li>Real-time workload communication visibility</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>Cilium enforces zero-trust network isolation for sensitive AI inference workloads.</span>
-                        </div>
-                        <div class="tmc-tags"><span>eBPF</span><span>Hubble</span><span>CNI</span></div>
-                    </div>
-                </div>
 
-                <!-- Python -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #3776ab 0%, #1e4d78 100%);">
-                        <i class="devicon-python-plain"></i>
+                    <div class="tech-plat-badge">
+                        <i class="devicon-python-plain" style="color:#3776ab;"></i>
                         <span>Python</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">Universal language of AI and data engineering — powering model training, data pipelines, REST APIs, automation scripts, and agentic orchestration.</p>
-                        <ul class="tmc-cases">
-                            <li>LangChain & LangGraph AI agent workflows</li>
-                            <li>Data preprocessing & ML feature engineering</li>
-                            <li>Cloud infrastructure & DevOps automation</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>LangGraph agent queries SQL, calls an API, summarizes with LLM — in 5 seconds.</span>
-                        </div>
-                        <div class="tmc-tags"><span>FastAPI</span><span>LangChain</span><span>Pandas</span></div>
-                    </div>
-                </div>
 
-                <!-- Terraform -->
-                <div class="tmc">
-                    <div class="tmc-banner" style="background: linear-gradient(135deg, #7b42bc 0%, #4a1a8c 100%);">
-                        <i class="devicon-terraform-plain"></i>
+                    <div class="tech-plat-badge">
+                        <i class="devicon-terraform-plain" style="color:#7b42bc;"></i>
                         <span>Terraform</span>
                     </div>
-                    <div class="tmc-body">
-                        <p class="tmc-desc">Infrastructure as Code at scale — reproducible, version-controlled cloud environments consistent across every cloud and team.</p>
-                        <ul class="tmc-cases">
-                            <li>Provisioning AI/ML infrastructure on GCP & AWS</li>
-                            <li>Multi-cloud state management at scale</li>
-                            <li>Security controls & compliance as code</li>
-                        </ul>
-                        <div class="tmc-ai">
-                            <i class="fas fa-robot"></i>
-                            <span>Terraform provisions sandboxed VPCs, IAM roles, and endpoints per AI agent automatically.</span>
-                        </div>
-                        <div class="tmc-tags"><span>IaC</span><span>Modules</span><span>GitOps</span></div>
-                    </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </section>
