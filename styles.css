@@ -743,6 +743,13 @@ section { padding: 6rem 0; }
 
 .tech-card:hover .tech-card-icon { transform: scale(1.12); }
 
+.tech-card-logo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    display: block;
+}
+
 .tech-card-name {
     font-size: 1rem;
     font-weight: 700;
