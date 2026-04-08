@@ -332,3 +332,57 @@ window.addEventListener('scroll', function() {
         }
     }
 });
+
+// ── Tech Wheel Tooltip ────────────────────────────────────────
+(function() {
+    const tooltip = document.getElementById('tech-tooltip');
+    if (!tooltip) return;
+
+    const tooltipName = tooltip.querySelector('.tech-tooltip-name');
+    const tooltipDesc = tooltip.querySelector('.tech-tooltip-desc');
+    const TOOLTIP_W = 290;
+    const MARGIN = 14;
+
+    function positionTooltip(rect) {
+        let left = rect.right + MARGIN;
+        let top  = rect.top + rect.height / 2 - tooltip.offsetHeight / 2;
+
+        if (left + TOOLTIP_W > window.innerWidth - MARGIN) {
+            left = rect.left - TOOLTIP_W - MARGIN;
+        }
+        if (left < MARGIN) left = MARGIN;
+        if (top < MARGIN) top = MARGIN;
+        if (top + tooltip.offsetHeight > window.innerHeight - MARGIN) {
+            top = window.innerHeight - tooltip.offsetHeight - MARGIN;
+        }
+
+        tooltip.style.left = left + 'px';
+        tooltip.style.top  = top  + 'px';
+    }
+
+    document.querySelectorAll('.tech-plat-badge').forEach(function(badge) {
+        badge.addEventListener('mouseenter', function() {
+            tooltipName.textContent = badge.dataset.name || '';
+            tooltipDesc.textContent = badge.dataset.desc || '';
+
+            tooltip.classList.remove('visible');
+            tooltip.style.left = '-9999px';
+            tooltip.style.top  = '-9999px';
+
+            requestAnimationFrame(function() {
+                const rect = badge.getBoundingClientRect();
+                positionTooltip(rect);
+                tooltip.classList.add('visible');
+            });
+        });
+
+        badge.addEventListener('mouseleave', function() {
+            tooltip.classList.remove('visible');
+        });
+
+        badge.addEventListener('mousemove', function() {
+            const rect = badge.getBoundingClientRect();
+            positionTooltip(rect);
+        });
+    });
+})();
