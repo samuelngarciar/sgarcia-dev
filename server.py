@@ -90,6 +90,7 @@ def run_server(port=5000, host='0.0.0.0'):
         return
     
     try:
+        socketserver.TCPServer.allow_reuse_address = True
         with socketserver.TCPServer((host, port), CloudNativeHandler) as httpd:
             print(f"Cloud Native Consulting Website")
             print(f"Server running at http://{host}:{port}/")

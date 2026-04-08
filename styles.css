@@ -795,14 +795,6 @@ section { padding: 6rem 0; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.tech-tooltip-label {
-    font-size: 0.67rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--primary-green);
-    margin: 0 0 0.55rem;
-}
 
 .tech-tooltip-cases {
     list-style: none;
