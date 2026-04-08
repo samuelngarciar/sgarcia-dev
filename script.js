@@ -360,7 +360,7 @@ window.addEventListener('scroll', function() {
         tooltip.style.top  = top  + 'px';
     }
 
-    document.querySelectorAll('.tech-plat-badge').forEach(function(badge) {
+    document.querySelectorAll('.tech-card').forEach(function(badge) {
         badge.addEventListener('mouseenter', function() {
             tooltipName.textContent = badge.dataset.name || '';
             tooltipDesc.textContent = badge.dataset.desc || '';

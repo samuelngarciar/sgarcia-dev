@@ -341,68 +341,87 @@
                 <h2>Core Technologies</h2>
                 <p>The essential platforms and tools that power every engagement — from infrastructure foundations to AI-driven systems in production.</p>
             </div>
-            <div class="tech-wheel-wrap">
-                <div class="tech-wheel">
 
-                    <div class="tech-wheel-core">
-                        <i class="fas fa-microchip"></i>
-                    </div>
+            <div class="tech-grid">
 
-                    <div class="tech-plat-badge tw-1"
-                         data-name="Kubernetes"
-                         data-desc="De-facto standard for container orchestration — automates deployment, scaling, and management of containerized workloads across any cloud with full resilience and zero-downtime releases.">
-                        <i class="devicon-kubernetes-plain" style="color:#326ce5;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-2"
-                         data-name="AI &amp; LLMs"
-                         data-desc="Large language model integration for intelligent automation, RAG knowledge pipelines, and agentic AI systems that reason, plan, and act autonomously without human intervention.">
-                        <i class="fas fa-brain" style="color:#6366f1;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-3"
-                         data-name="Google Cloud"
-                         data-desc="Google's cloud suite providing Vertex AI Pipelines, GKE, BigQuery, and Apigee for scalable AI-driven and data-intensive architectures at enterprise scale.">
-                        <i class="devicon-googlecloud-plain" style="color:#4285F4;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-4"
-                         data-name="AWS"
-                         data-desc="Amazon's cloud infrastructure delivering EKS, Bedrock, SageMaker, and Lambda for enterprise-grade AI workloads, DevSecOps pipelines, and secure multi-region deployments.">
-                        <i class="fab fa-aws" style="color:#FF9900;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-5"
-                         data-name="Service Mesh"
-                         data-desc="Secure, observable microservice communication layer using mTLS encryption, canary traffic splitting, and distributed tracing — all without modifying application code.">
-                        <i class="fas fa-network-wired" style="color:#0ea5e9;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-6"
-                         data-name="Cilium"
-                         data-desc="eBPF-powered networking and security for Kubernetes — enforces zero-trust network policies and delivers high-throughput, low-latency data plane for AI inference workloads.">
-                        <i class="fas fa-shield-halved" style="color:#00b894;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-7"
-                         data-name="Python"
-                         data-desc="Universal language for AI engineering — powers LangChain and LangGraph agentic workflows, FastAPI services, ML training pipelines, and cloud infrastructure automation scripts.">
-                        <i class="devicon-python-plain" style="color:#3776ab;"></i>
-                    </div>
-
-                    <div class="tech-plat-badge tw-8"
-                         data-name="Terraform"
-                         data-desc="Infrastructure as Code for reproducible, version-controlled cloud environments — provisions AI clusters, IAM roles, VPCs, and endpoints on GCP and AWS at enterprise scale.">
-                        <i class="devicon-terraform-plain" style="color:#7b42bc;"></i>
-                    </div>
-
+                <div class="tech-card" style="--tc:#326ce5"
+                     data-name="Kubernetes"
+                     data-desc="De-facto standard for container orchestration — automates deployment, scaling, and management of containerized workloads across any cloud with full resilience and zero-downtime releases.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="devicon-kubernetes-plain" style="color:#326ce5;"></i></div>
+                    <p class="tech-card-name">Kubernetes</p>
+                    <p class="tech-card-tagline">Container Orchestration</p>
                 </div>
 
-                <div class="tech-tooltip" id="tech-tooltip">
-                    <h4 class="tech-tooltip-name"></h4>
-                    <p class="tech-tooltip-desc"></p>
+                <div class="tech-card" style="--tc:#6366f1"
+                     data-name="AI &amp; LLMs"
+                     data-desc="Large language model integration for intelligent automation, RAG knowledge pipelines, and agentic AI systems that reason, plan, and act autonomously without human intervention.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="fas fa-brain" style="color:#6366f1;"></i></div>
+                    <p class="tech-card-name">AI &amp; LLMs</p>
+                    <p class="tech-card-tagline">Intelligent Automation</p>
                 </div>
+
+                <div class="tech-card" style="--tc:#4285F4"
+                     data-name="Google Cloud"
+                     data-desc="Google's cloud suite providing Vertex AI Pipelines, GKE, BigQuery, and Apigee for scalable AI-driven and data-intensive architectures at enterprise scale.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="devicon-googlecloud-plain" style="color:#4285F4;"></i></div>
+                    <p class="tech-card-name">Google Cloud</p>
+                    <p class="tech-card-tagline">Cloud Platform</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#FF9900"
+                     data-name="AWS"
+                     data-desc="Amazon's cloud infrastructure delivering EKS, Bedrock, SageMaker, and Lambda for enterprise-grade AI workloads, DevSecOps pipelines, and secure multi-region deployments.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="fab fa-aws" style="color:#FF9900;"></i></div>
+                    <p class="tech-card-name">AWS</p>
+                    <p class="tech-card-tagline">Cloud Infrastructure</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#0ea5e9"
+                     data-name="Service Mesh"
+                     data-desc="Secure, observable microservice communication layer using mTLS encryption, canary traffic splitting, and distributed tracing — all without modifying application code.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="fas fa-network-wired" style="color:#0ea5e9;"></i></div>
+                    <p class="tech-card-name">Service Mesh</p>
+                    <p class="tech-card-tagline">Secure Connectivity</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#00b894"
+                     data-name="Cilium"
+                     data-desc="eBPF-powered networking and security for Kubernetes — enforces zero-trust network policies and delivers high-throughput, low-latency data plane for AI inference workloads.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="fas fa-shield-halved" style="color:#00b894;"></i></div>
+                    <p class="tech-card-name">Cilium</p>
+                    <p class="tech-card-tagline">eBPF Networking</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#3776ab"
+                     data-name="Python"
+                     data-desc="Universal language for AI engineering — powers LangChain and LangGraph agentic workflows, FastAPI services, ML training pipelines, and cloud infrastructure automation scripts.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="devicon-python-plain" style="color:#3776ab;"></i></div>
+                    <p class="tech-card-name">Python</p>
+                    <p class="tech-card-tagline">AI Engineering</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#7b42bc"
+                     data-name="Terraform"
+                     data-desc="Infrastructure as Code for reproducible, version-controlled cloud environments — provisions AI clusters, IAM roles, VPCs, and endpoints on GCP and AWS at enterprise scale.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="devicon-terraform-plain" style="color:#7b42bc;"></i></div>
+                    <p class="tech-card-name">Terraform</p>
+                    <p class="tech-card-tagline">Infrastructure as Code</p>
+                </div>
+
             </div>
+        </div>
+
+        <div class="tech-tooltip" id="tech-tooltip">
+            <h4 class="tech-tooltip-name"></h4>
+            <p class="tech-tooltip-desc"></p>
         </div>
     </section>
 

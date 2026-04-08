@@ -646,114 +646,139 @@ section { padding: 6rem 0; }
     font-size: 1.4rem;
 }
 
-/* ── Technologies Section ───────────────────────────────────── */
+/* ── Technologies Section — dark glassmorphism grid ─────────── */
 .technologies {
-    background: var(--off-white);
-}
-
-/* ── Tech Wheel ─────────────────────────────────────────────── */
-.tech-wheel-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0 3rem;
-}
-
-.tech-wheel {
+    background: linear-gradient(145deg, #0d1f2d 0%, #091520 55%, #0c2019 100%);
     position: relative;
-    width: 680px;
-    height: 680px;
-    flex-shrink: 0;
+    overflow: hidden;
 }
 
-/* Dashed orbit ring */
-.tech-wheel::before {
+.technologies::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 560px;
-    height: 560px;
-    border-radius: 50%;
-    border: 2px dashed rgba(0,184,148,0.3);
+    inset: 0;
+    background-image: radial-gradient(rgba(0,184,148,0.09) 1px, transparent 1px);
+    background-size: 28px 28px;
+    pointer-events: none;
+    z-index: 0;
 }
 
-/* Center core */
-.tech-wheel-core {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 96px;
-    height: 96px;
-    background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2rem;
-    box-shadow:
-        0 0 0 14px rgba(0,184,148,0.12),
-        0 0 0 28px rgba(0,184,148,0.06),
-        var(--shadow-lg);
-    z-index: 2;
+.technologies .container { position: relative; z-index: 1; }
+
+.technologies .section-tag {
+    background: rgba(0,184,148,0.15);
+    color: #4ecca3;
+    border-color: rgba(0,184,148,0.3);
 }
 
-/* Badge base — icon-only square card, absolutely centered, shifted to orbit by transform */
-.tech-plat-badge {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 140px;
-    height: 140px;
-    background: var(--white);
+.technologies .section-header h2 { color: #ffffff; }
+.technologies .section-header p  { color: rgba(255,255,255,0.55); }
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.tech-card {
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.08);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
+    padding: 2.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
     cursor: pointer;
-    transition: box-shadow 0.25s ease, scale 0.25s ease;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease;
+}
+
+/* Colored top accent line */
+.tech-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--tc, #00b894);
+    opacity: 0;
+    transition: opacity 0.32s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(255,255,255,0.14);
+    box-shadow: 0 28px 70px rgba(0,0,0,0.5), 0 0 0 1px var(--tc);
+}
+
+.tech-card:hover::after { opacity: 1; }
+
+/* Radial glow blob behind icon */
+.tech-card-glow {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: var(--tc, #00b894);
+    opacity: 0;
+    filter: blur(55px);
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.tech-card:hover .tech-card-glow { opacity: 0.2; }
+
+.tech-card-icon {
+    font-size: 4rem;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.tech-card:hover .tech-card-icon { transform: scale(1.12); }
+
+.tech-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.01em;
+    position: relative;
     z-index: 1;
 }
 
-.tech-plat-badge:hover {
-    box-shadow: var(--shadow-lg), 0 0 0 3px var(--primary-green);
-    scale: 1.12;
-    z-index: 10;
+.tech-card-tagline {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.38);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
 }
-
-.tech-plat-badge i {
-    font-size: 6.8rem;
-    line-height: 1;
-}
-
-/* Position 8 badges evenly around the orbit — radius 280px */
-.tw-1 { transform: translate(-50%, -50%) rotate(0deg)   translateX(280px) rotate(0deg); }
-.tw-2 { transform: translate(-50%, -50%) rotate(45deg)  translateX(280px) rotate(-45deg); }
-.tw-3 { transform: translate(-50%, -50%) rotate(90deg)  translateX(280px) rotate(-90deg); }
-.tw-4 { transform: translate(-50%, -50%) rotate(135deg) translateX(280px) rotate(-135deg); }
-.tw-5 { transform: translate(-50%, -50%) rotate(180deg) translateX(280px) rotate(-180deg); }
-.tw-6 { transform: translate(-50%, -50%) rotate(225deg) translateX(280px) rotate(-225deg); }
-.tw-7 { transform: translate(-50%, -50%) rotate(270deg) translateX(280px) rotate(-270deg); }
-.tw-8 { transform: translate(-50%, -50%) rotate(315deg) translateX(280px) rotate(-315deg); }
 
 /* ── Tech Tooltip ────────────────────────────────────────────── */
 .tech-tooltip {
     position: fixed;
     z-index: 9999;
-    background: var(--white);
+    background: #0d1f2d;
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(0,184,148,0.18);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     padding: 1.25rem 1.5rem;
     max-width: 290px;
     pointer-events: none;
     opacity: 0;
     transform: translateY(8px);
     transition: opacity 0.2s ease, transform 0.2s ease;
-    border-top: 4px solid var(--primary-green);
+    border-top: 3px solid var(--primary-green);
 }
 
 .tech-tooltip.visible {
@@ -763,8 +788,8 @@ section { padding: 6rem 0; }
 
 .tech-tooltip-name {
     font-weight: 700;
-    font-size: 1rem;
-    color: var(--near-black);
+    font-size: 0.95rem;
+    color: #ffffff;
     margin: 0 0 0.6rem;
     display: flex;
     align-items: center;
@@ -774,51 +799,29 @@ section { padding: 6rem 0; }
 .tech-tooltip-name::before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: var(--primary-green);
     flex-shrink: 0;
 }
 
 .tech-tooltip-desc {
-    font-size: 0.875rem;
-    color: var(--medium-gray);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
     line-height: 1.65;
     margin: 0;
 }
 
-/* Responsive wheel */
-@media (max-width: 860px) {
-    .tech-wheel { width: 600px; height: 600px; }
-    .tech-wheel::before { width: 490px; height: 490px; }
-    .tech-plat-badge { width: 116px; height: 116px; }
-    .tech-plat-badge i { font-size: 5.5rem; }
-    .tw-1 { transform: translate(-50%, -50%) rotate(0deg)   translateX(245px) rotate(0deg); }
-    .tw-2 { transform: translate(-50%, -50%) rotate(45deg)  translateX(245px) rotate(-45deg); }
-    .tw-3 { transform: translate(-50%, -50%) rotate(90deg)  translateX(245px) rotate(-90deg); }
-    .tw-4 { transform: translate(-50%, -50%) rotate(135deg) translateX(245px) rotate(-135deg); }
-    .tw-5 { transform: translate(-50%, -50%) rotate(180deg) translateX(245px) rotate(-180deg); }
-    .tw-6 { transform: translate(-50%, -50%) rotate(225deg) translateX(245px) rotate(-225deg); }
-    .tw-7 { transform: translate(-50%, -50%) rotate(270deg) translateX(245px) rotate(-270deg); }
-    .tw-8 { transform: translate(-50%, -50%) rotate(315deg) translateX(245px) rotate(-315deg); }
+/* Responsive grid */
+@media (max-width: 900px) {
+    .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
 }
 
-@media (max-width: 560px) {
-    .tech-wheel-wrap { overflow-x: auto; }
-    .tech-wheel { width: 460px; height: 460px; }
-    .tech-wheel::before { width: 370px; height: 370px; }
-    .tech-wheel-core { width: 76px; height: 76px; font-size: 1.6rem; }
-    .tech-plat-badge { width: 90px; height: 90px; }
-    .tech-plat-badge i { font-size: 4rem; }
-    .tw-1 { transform: translate(-50%, -50%) rotate(0deg)   translateX(185px) rotate(0deg); }
-    .tw-2 { transform: translate(-50%, -50%) rotate(45deg)  translateX(185px) rotate(-45deg); }
-    .tw-3 { transform: translate(-50%, -50%) rotate(90deg)  translateX(185px) rotate(-90deg); }
-    .tw-4 { transform: translate(-50%, -50%) rotate(135deg) translateX(185px) rotate(-135deg); }
-    .tw-5 { transform: translate(-50%, -50%) rotate(180deg) translateX(185px) rotate(-180deg); }
-    .tw-6 { transform: translate(-50%, -50%) rotate(225deg) translateX(185px) rotate(-225deg); }
-    .tw-7 { transform: translate(-50%, -50%) rotate(270deg) translateX(185px) rotate(-270deg); }
-    .tw-8 { transform: translate(-50%, -50%) rotate(315deg) translateX(185px) rotate(-315deg); }
+@media (max-width: 480px) {
+    .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .tech-card { padding: 1.75rem 1rem 1.5rem; }
+    .tech-card-icon { font-size: 3rem; }
 }
 
 /* ── Services Section ───────────────────────────────────────── */
