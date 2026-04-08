@@ -339,8 +339,9 @@ window.addEventListener('scroll', function() {
     if (!tooltip) return;
 
     const tooltipName = tooltip.querySelector('.tech-tooltip-name');
-    const tooltipDesc = tooltip.querySelector('.tech-tooltip-desc');
-    const TOOLTIP_W = 290;
+    const tooltipUc1  = tooltip.querySelector('.tech-tooltip-uc1');
+    const tooltipUc2  = tooltip.querySelector('.tech-tooltip-uc2');
+    const TOOLTIP_W = 300;
     const MARGIN = 14;
 
     function positionTooltip(rect) {
@@ -363,7 +364,8 @@ window.addEventListener('scroll', function() {
     document.querySelectorAll('.tech-card').forEach(function(badge) {
         badge.addEventListener('mouseenter', function() {
             tooltipName.textContent = badge.dataset.name || '';
-            tooltipDesc.textContent = badge.dataset.desc || '';
+            tooltipUc1.textContent  = badge.dataset.uc1  || '';
+            tooltipUc2.textContent  = badge.dataset.uc2  || '';
 
             tooltip.classList.remove('visible');
             tooltip.style.left = '-9999px';

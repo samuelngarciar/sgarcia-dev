@@ -346,7 +346,8 @@
 
                 <div class="tech-card" style="--tc:#326ce5"
                      data-name="Kubernetes"
-                     data-desc="De-facto standard for container orchestration — automates deployment, scaling, and management of containerized workloads across any cloud with full resilience and zero-downtime releases.">
+                     data-uc1="Auto-scale AI inference pods during traffic spikes with zero manual intervention using HPA and custom metrics."
+                     data-uc2="Orchestrate multi-tenant microservices with zero-downtime blue-green and canary deployments across any cloud.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="devicon-kubernetes-plain" style="color:#326ce5;"></i></div>
                     <p class="tech-card-name">Kubernetes</p>
@@ -355,7 +356,8 @@
 
                 <div class="tech-card" style="--tc:#6366f1"
                      data-name="AI &amp; LLMs"
-                     data-desc="Large language model integration for intelligent automation, RAG knowledge pipelines, and agentic AI systems that reason, plan, and act autonomously without human intervention.">
+                     data-uc1="Build RAG pipelines that retrieve enterprise knowledge and answer complex business questions with full context."
+                     data-uc2="Deploy autonomous agents that reason, plan, and execute multi-step tasks end-to-end without human intervention.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="fas fa-brain" style="color:#6366f1;"></i></div>
                     <p class="tech-card-name">AI &amp; LLMs</p>
@@ -364,7 +366,8 @@
 
                 <div class="tech-card" style="--tc:#4285F4"
                      data-name="Google Cloud"
-                     data-desc="Google's cloud suite providing Vertex AI Pipelines, GKE, BigQuery, and Apigee for scalable AI-driven and data-intensive architectures at enterprise scale.">
+                     data-uc1="Train and serve ML models via Vertex AI Pipelines with full MLOps automation from experiment to production."
+                     data-uc2="Real-time analytics and AI-powered search using BigQuery ML and Vertex AI Search across enterprise data.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="devicon-googlecloud-plain" style="color:#4285F4;"></i></div>
                     <p class="tech-card-name">Google Cloud</p>
@@ -373,7 +376,8 @@
 
                 <div class="tech-card" style="--tc:#FF9900"
                      data-name="AWS"
-                     data-desc="Amazon's cloud infrastructure delivering EKS, Bedrock, SageMaker, and Lambda for enterprise-grade AI workloads, DevSecOps pipelines, and secure multi-region deployments.">
+                     data-uc1="Agentic AI workflows orchestrated via Step Functions + Bedrock that process thousands of tasks per hour autonomously."
+                     data-uc2="Secure enterprise workloads with GuardDuty, IAM, and SageMaker for compliant ML training at scale.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="fab fa-aws" style="color:#FF9900;"></i></div>
                     <p class="tech-card-name">AWS</p>
@@ -382,7 +386,8 @@
 
                 <div class="tech-card" style="--tc:#0ea5e9"
                      data-name="Service Mesh"
-                     data-desc="Secure, observable microservice communication layer using mTLS encryption, canary traffic splitting, and distributed tracing — all without modifying application code.">
+                     data-uc1="Enforce mTLS between AI agent microservices for zero-trust communication without touching application code."
+                     data-uc2="Progressive canary releases for AI model versions, routing a percentage of traffic to new models safely.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="fas fa-network-wired" style="color:#0ea5e9;"></i></div>
                     <p class="tech-card-name">Service Mesh</p>
@@ -391,7 +396,8 @@
 
                 <div class="tech-card" style="--tc:#00b894"
                      data-name="Cilium"
-                     data-desc="eBPF-powered networking and security for Kubernetes — enforces zero-trust network policies and delivers high-throughput, low-latency data plane for AI inference workloads.">
+                     data-uc1="Enforce zero-trust eBPF network policies between sensitive AI inference workloads at kernel level."
+                     data-uc2="High-throughput, low-latency data plane for ML model pods — visible in real time via Hubble observability.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="fas fa-shield-halved" style="color:#00b894;"></i></div>
                     <p class="tech-card-name">Cilium</p>
@@ -400,7 +406,8 @@
 
                 <div class="tech-card" style="--tc:#3776ab"
                      data-name="Python"
-                     data-desc="Universal language for AI engineering — powers LangChain and LangGraph agentic workflows, FastAPI services, ML training pipelines, and cloud infrastructure automation scripts.">
+                     data-uc1="Build LangGraph multi-agent workflows that query databases, call APIs, and summarize with LLMs in seconds."
+                     data-uc2="Develop FastAPI inference services and Pandas/Scikit-learn pipelines for production AI deployments.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="devicon-python-plain" style="color:#3776ab;"></i></div>
                     <p class="tech-card-name">Python</p>
@@ -409,11 +416,22 @@
 
                 <div class="tech-card" style="--tc:#7b42bc"
                      data-name="Terraform"
-                     data-desc="Infrastructure as Code for reproducible, version-controlled cloud environments — provisions AI clusters, IAM roles, VPCs, and endpoints on GCP and AWS at enterprise scale.">
+                     data-uc1="Provision isolated AI sandboxes — VPCs, IAM roles, GPU node pools — per project automatically via GitOps."
+                     data-uc2="Manage multi-cloud infrastructure state across GCP and AWS with version-controlled, auditable IaC modules.">
                     <div class="tech-card-glow"></div>
                     <div class="tech-card-icon"><i class="devicon-terraform-plain" style="color:#7b42bc;"></i></div>
                     <p class="tech-card-name">Terraform</p>
                     <p class="tech-card-tagline">Infrastructure as Code</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#4d6fff"
+                     data-name="OPA"
+                     data-uc1="Block non-compliant Kubernetes workloads at admission time — enforce resource limits, labels, and image registries."
+                     data-uc2="Define security and compliance rules as code across multi-cloud environments with a unified policy language.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><i class="fas fa-gavel" style="color:#4d6fff;"></i></div>
+                    <p class="tech-card-name">OPA</p>
+                    <p class="tech-card-tagline">Policy as Code</p>
                 </div>
 
             </div>
@@ -421,7 +439,11 @@
 
         <div class="tech-tooltip" id="tech-tooltip">
             <h4 class="tech-tooltip-name"></h4>
-            <p class="tech-tooltip-desc"></p>
+            <p class="tech-tooltip-label">Main use cases</p>
+            <ul class="tech-tooltip-cases">
+                <li class="tech-tooltip-uc1"></li>
+                <li class="tech-tooltip-uc2"></li>
+            </ul>
         </div>
     </section>
 
@@ -450,15 +472,15 @@
 
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Implementation & Support</h3>
-                    <p>End-to-end implementation of cloud-native solutions with ongoing support and maintenance — ensuring smooth operations and continuous improvement.</p>
+                    <h3>Working with AI Agents</h3>
+                    <p>Practical best practices for designing, deploying, and governing AI agents in production — ensuring reliability, safety, and measurable business outcomes.</p>
                     <ul>
-                        <li>Platform implementation</li>
-                        <li>CI/CD pipeline setup</li>
-                        <li>Monitoring & alerting</li>
-                        <li>24/7 support options</li>
+                        <li>Define clear goals &amp; bounded tool scope</li>
+                        <li>Human-in-the-loop for critical decisions</li>
+                        <li>Observability: log every action &amp; tool call</li>
+                        <li>Adversarial testing &amp; edge case coverage</li>
                     </ul>
                 </div>
 
@@ -615,7 +637,7 @@
                                 <option value="evaluation">Free Evaluation</option>
                                 <option value="ai">AI Consulting</option>
                                 <option value="design">Design & Architecture</option>
-                                <option value="implementation">Implementation & Support</option>
+                                <option value="ai-agents">Working with AI Agents</option>
                                 <option value="migration">Migration & Modernization</option>
                                 <option value="devsecops">DevSecOps</option>
                                 <option value="vmware">VMware Migration</option>

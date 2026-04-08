@@ -788,29 +788,47 @@ section { padding: 6rem 0; }
 
 .tech-tooltip-name {
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #ffffff;
-    margin: 0 0 0.6rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.tech-tooltip-name::before {
-    content: '';
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--primary-green);
-    flex-shrink: 0;
+.tech-tooltip-label {
+    font-size: 0.67rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-green);
+    margin: 0 0 0.55rem;
 }
 
-.tech-tooltip-desc {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.6);
-    line-height: 1.65;
+.tech-tooltip-cases {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.tech-tooltip-cases li {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.55;
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.tech-tooltip-cases li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--primary-green);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2;
 }
 
 /* Responsive grid */
