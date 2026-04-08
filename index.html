@@ -344,6 +344,7 @@
 
             <div class="tech-grid">
 
+                <!-- Row 1 -->
                 <div class="tech-card" style="--tc:#326ce5"
                      data-name="Kubernetes"
                      data-uc1="Auto-scale AI inference pods during traffic spikes with zero manual intervention using HPA and custom metrics."
@@ -352,16 +353,6 @@
                     <div class="tech-card-icon"><i class="devicon-kubernetes-plain" style="color:#326ce5;"></i></div>
                     <p class="tech-card-name">Kubernetes</p>
                     <p class="tech-card-tagline">Container Orchestration</p>
-                </div>
-
-                <div class="tech-card" style="--tc:#6366f1"
-                     data-name="AI &amp; LLMs"
-                     data-uc1="Build RAG pipelines that retrieve enterprise knowledge and answer complex business questions with full context."
-                     data-uc2="Deploy autonomous agents that reason, plan, and execute multi-step tasks end-to-end without human intervention.">
-                    <div class="tech-card-glow"></div>
-                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/openai/6366f1" alt="OpenAI" class="tech-card-logo"></div>
-                    <p class="tech-card-name">AI &amp; LLMs</p>
-                    <p class="tech-card-tagline">Intelligent Automation</p>
                 </div>
 
                 <div class="tech-card" style="--tc:#4285F4"
@@ -384,26 +375,6 @@
                     <p class="tech-card-tagline">Cloud Infrastructure</p>
                 </div>
 
-                <div class="tech-card" style="--tc:#0ea5e9"
-                     data-name="Service Mesh"
-                     data-uc1="Enforce mTLS between AI agent microservices for zero-trust communication without touching application code."
-                     data-uc2="Progressive canary releases for AI model versions, routing a percentage of traffic to new models safely.">
-                    <div class="tech-card-glow"></div>
-                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/istio/0ea5e9" alt="Istio" class="tech-card-logo"></div>
-                    <p class="tech-card-name">Service Mesh</p>
-                    <p class="tech-card-tagline">Secure Connectivity</p>
-                </div>
-
-                <div class="tech-card" style="--tc:#00b894"
-                     data-name="Cilium"
-                     data-uc1="Enforce zero-trust eBPF network policies between sensitive AI inference workloads at kernel level."
-                     data-uc2="High-throughput, low-latency data plane for ML model pods — visible in real time via Hubble observability.">
-                    <div class="tech-card-glow"></div>
-                    <div class="tech-card-icon"><img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/cilium/icon/color/cilium-icon-color.png" alt="Cilium" class="tech-card-logo"></div>
-                    <p class="tech-card-name">Cilium</p>
-                    <p class="tech-card-tagline">eBPF Networking</p>
-                </div>
-
                 <div class="tech-card" style="--tc:#3776ab"
                      data-name="Python"
                      data-uc1="Build LangGraph multi-agent workflows that query databases, call APIs, and summarize with LLMs in seconds."
@@ -424,12 +395,63 @@
                     <p class="tech-card-tagline">Infrastructure as Code</p>
                 </div>
 
+                <!-- Row 2 -->
+                <div class="tech-card" style="--tc:#6366f1"
+                     data-name="AI &amp; LLMs"
+                     data-uc1="Build RAG pipelines that retrieve enterprise knowledge and answer complex business questions with full context."
+                     data-uc2="Deploy autonomous agents that reason, plan, and execute multi-step tasks end-to-end without human intervention.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" class="tech-card-logo" aria-label="OpenAI">
+                            <path fill="#6366f1" d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835 9.964 9.964 0 0 0-6.211-2.318c-4.433-.017-8.37 2.645-9.953 6.757a9.964 9.964 0 0 0-6.664 4.834 10.078 10.078 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 6.212 2.318c4.433.016 8.371-2.647 9.954-6.762a9.965 9.965 0 0 0 6.664-4.834 10.079 10.079 0 0 0-1.243-11.813zM22.498 37.886c-1.479 0-2.906-.51-4.054-1.444l.199-.113 6.737-3.89a1.105 1.105 0 0 0 .558-.967v-9.499l2.846 1.645a.102.102 0 0 1 .056.078v7.86c-.003 3.514-2.849 6.364-6.342 6.37zm-13.626-5.84a6.343 6.343 0 0 1-.759-4.257l.201.121 6.737 3.89a1.103 1.103 0 0 0 1.114 0l8.227-4.749v3.289a.104.104 0 0 1-.042.085L17.91 34.2c-3.042 1.759-6.92.714-8.038-2.153zM7.044 13.294a6.345 6.345 0 0 1 3.312-2.792v7.998a1.103 1.103 0 0 0 .558.964l8.197 4.731-2.845 1.645a.102.102 0 0 1-.098.011L9.3 21.826c-3.038-1.763-4.083-5.642-2.256-8.531zm23.38 5.465-8.227-4.748 2.845-1.642a.103.103 0 0 1 .099-.011l6.867 3.966a6.354 6.354 0 0 1-.942 11.459v-7.999a1.104 1.104 0 0 0-.642-.025zm2.831-4.266-.2-.121-6.737-3.89a1.103 1.103 0 0 0-1.114 0L17 14.228v-3.289a.102.102 0 0 1 .041-.085l6.842-3.953c3.042-1.758 6.922-.711 8.038 2.157a6.333 6.333 0 0 1 .335 5.431zm-17.811 5.86-2.845-1.645a.103.103 0 0 1-.056-.079v-7.86c.002-3.513 2.851-6.364 6.348-6.366a6.338 6.338 0 0 1 4.053 1.443l-.199.113-6.737 3.89a1.103 1.103 0 0 0-.558.967l-.006 9.537zm1.545-3.33 3.662-2.114 3.662 2.112v4.226l-3.662 2.114-3.662-2.114V17.023z"/>
+                        </svg>
+                    </div>
+                    <p class="tech-card-name">AI &amp; LLMs</p>
+                    <p class="tech-card-tagline">Intelligent Automation</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#0ea5e9"
+                     data-name="Istio"
+                     data-uc1="Enforce mTLS between AI agent microservices for zero-trust communication without touching application code."
+                     data-uc2="Progressive canary releases for AI model versions, routing a percentage of traffic to new models safely.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/istio/0ea5e9" alt="Istio" class="tech-card-logo"></div>
+                    <p class="tech-card-name">Istio</p>
+                    <p class="tech-card-tagline">Service Mesh</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#2beda7"
+                     data-name="Linkerd"
+                     data-uc1="Add ultra-lightweight mTLS and observability to Kubernetes with minimal overhead and zero-config setup."
+                     data-uc2="Automatic retries, load balancing, and circuit breaking for AI microservices with sub-millisecond latency impact.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/linkerd/2beda7" alt="Linkerd" class="tech-card-logo"></div>
+                    <p class="tech-card-name">Linkerd</p>
+                    <p class="tech-card-tagline">Service Mesh</p>
+                </div>
+
+                <div class="tech-card" style="--tc:#00b894"
+                     data-name="Cilium"
+                     data-uc1="Enforce zero-trust eBPF network policies between sensitive AI inference workloads at kernel level."
+                     data-uc2="High-throughput, low-latency data plane for ML model pods — visible in real time via Hubble observability.">
+                    <div class="tech-card-glow"></div>
+                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/cilium/00b894" alt="Cilium" class="tech-card-logo"></div>
+                    <p class="tech-card-name">Cilium</p>
+                    <p class="tech-card-tagline">eBPF Networking</p>
+                </div>
+
                 <div class="tech-card" style="--tc:#4d6fff"
                      data-name="OPA"
                      data-uc1="Block non-compliant Kubernetes workloads at admission time — enforce resource limits, labels, and image registries."
                      data-uc2="Define security and compliance rules as code across multi-cloud environments with a unified policy language.">
                     <div class="tech-card-glow"></div>
-                    <div class="tech-card-icon"><img src="https://cdn.simpleicons.org/openpolicyagent/4d6fff" alt="OPA" class="tech-card-logo"></div>
+                    <div class="tech-card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" class="tech-card-logo" aria-label="OPA">
+                            <path fill="#4d6fff" d="M50 4 L92 20 L92 54 C92 78 73 96 50 106 C27 96 8 78 8 54 L8 20 Z"/>
+                            <path fill="rgba(255,255,255,0.15)" d="M50 14 L84 27 L84 54 C84 74 67 90 50 99 C33 90 16 74 16 54 L16 27 Z"/>
+                            <text x="50" y="62" text-anchor="middle" fill="white" font-size="24" font-weight="700" font-family="monospace, sans-serif" letter-spacing="1">OPA</text>
+                        </svg>
+                    </div>
                     <p class="tech-card-name">OPA</p>
                     <p class="tech-card-tagline">Policy as Code</p>
                 </div>
