@@ -56,10 +56,12 @@ class CloudNativeHandler(http.server.SimpleHTTPRequestHandler):
             self.send_header('Content-Length', str(file_size))
             
             # Add caching headers for static assets
-            if filepath.endswith(('.css', '.js', '.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg')):
-                self.send_header('Cache-Control', 'public, max-age=31536000')  # 1 year
+            if filepath.endswith(('.css', '.js')):
+                self.send_header('Cache-Control', 'no-cache, must-revalidate')
+            elif filepath.endswith(('.png', '.jpg', '.jpeg', '.gif', '.ico', '.svg')):
+                self.send_header('Cache-Control', 'public, max-age=86400')  # 1 day
             else:
-                self.send_header('Cache-Control', 'public, max-age=3600')  # 1 hour
+                self.send_header('Cache-Control', 'no-cache, must-revalidate')
             
             # Security headers
             self.send_header('X-Content-Type-Options', 'nosniff')
